@@ -74,6 +74,14 @@ function AuthorityPendingState({ user }: { user: User }) {
 }
 
 export default function Page() {
+  const handleGoogleLogin = async () => {
+  try {
+    const result = await signInWithPopup(auth, provider);
+    console.log(result.user);
+  } catch (error) {
+    console.error(error);
+  }
+};
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [pageView, setPageView] = useState<PageView>('home');
   const [hydrated, setHydrated] = useState(false);
