@@ -66,10 +66,6 @@ function AuthorityPendingState({ user }: { user: User }) {
             <p className="mt-4 text-xs uppercase tracking-[0.2em] text-muted-foreground">
               Current review state: {user.approvalStatus}
             </p>
-            <button
-              onClick={handleGoogleLogin}
-              className="mt-4 w-full rounded-lg bg-blue-500 py-2 text-white font-semibold hover:bg-blue-600 transition"
-            >
               Sign in with Google
             </button>
           </div>
