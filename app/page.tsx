@@ -66,7 +66,6 @@ function AuthorityPendingState({ user }: { user: User }) {
               Current review state: {user.approvalStatus}
             </p>
               Sign in with Google
-            </button>
           </div>
         </div>
       </div>
