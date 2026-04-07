@@ -1,5 +1,7 @@
 'use client';
 
+import { signInWithPopup } from "firebase/auth";
+import { auth, provider } from "@/lib/firebase";
 import { useEffect, useState } from 'react';
 import { getCurrentUser, initializeDB, logoutUser, User } from '@/lib/db';
 import AuthPage from '@/components/AuthPage';
