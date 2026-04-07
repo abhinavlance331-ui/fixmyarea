@@ -87,7 +87,6 @@ export default function Page() {
   } catch (error) {
     console.error(error);
   }
-  };
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [pageView, setPageView] = useState<PageView>('home');
   const [hydrated, setHydrated] = useState(false);
